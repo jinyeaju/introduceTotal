@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+/* google_font */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{box-sizing: border-box; font-family: 'Nanum Gothic', sans-serif; }
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+/* 적용 글씨체 클래스 미리 선언 */
+.mj{font-family: 'Nanum Myeongjo', serif;}
+.gt{font-family: 'Gentium Book Plus', serif;}
+
+
+/* index.html 커버 */
+#Index_cover{
+    width: 100%; height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img/crescent.jpg);
+    position: relative;
+}
+#Index_cover .wrap{
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#Index_cover .wrap .top_logo{ width: 200px; height: auto; padding-bottom: 100px;}
+#Index_cover .wrap .top_logo a{}
+#Index_cover .wrap .top_logo a img{ display: block; width: 100%;}
+#Index_cover .wrap h2{ font-size: 24px;}
+#Index_cover .wrap p{
+    position: absolute;
+    bottom: 40px; left: 50%;
+    transform: translateX(-50%);
+    color: #aaa;
+    font-size: 14px;
+}
+
+
+/* 공통 header part */
+header{
+    width: 100%; height: 80px;
+    background-color: #000;
+    color: #fff;
+}
+header .wrap{
+    width: 1200px; height: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .wrap .logo{}
+header .wrap .logo a{}
+header .wrap .logo a img{
+    display: block;
+    height: 60px;
+}
+header .wrap .menu{}
+header .wrap .menu ul{display: flex; flex-wrap: wrap;}
+header .wrap .menu ul li{margin: 0 10px;}
+header .wrap .menu ul li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: lighter;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+header .wrap .menuOpenBtn{display: none;}
+
+
+
+
+
+section .wrap > div{ 
+    padding-bottom: 80px; 
+}
+section .wrap > div p{
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 40px;
+    word-break: keep-all;
+}
+section .wrap > div p span{
+    font-weight: bold;
+    display: block;
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+section .wrap > div h3{
+    font-size: 28px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+section .wrap > h3{
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 60px;
+}
+
+/* #summary part */
+#summary{
+    width: 100%; 
+    height: auto;
+}
+#summary .wrap{
+    width: 1200px; height: 100%;
+    margin: 0 auto;
+    /* background-color: #ffd; */
+    padding: 100px 10px 126px;
+    color: #666;
+}
+#summary .wrap a{ 
+    display: block; 
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+/* #performance part */
+#performance{
+    width: 100%; 
+    height: auto;
+}
+#performance .wrap{
+    width: 1200px; height: 100%;
+    margin: 0 auto;
+    /* background-color: #ffd; */
+    padding: 100px 10px 126px;
+    color: #666;
+}
+
+/* #motive part */
+#motive{
+    width: 100%; 
+    height: auto;
+}
+#motive .wrap{
+    width: 1200px; height: 100%;
+    margin: 0 auto;
+    /* background-color: #ffd; */
+    padding: 100px 10px 126px;
+    color: #666;
+}
+
+
+/* #etc part */
+#etc{
+    width: 100%; 
+    height: auto;
+}
+#etc .wrap{
+    width: 1200px; height: 100%;
+    margin: 0 auto;
+    /* background-color: #ffd; */
+    padding: 100px 10px 126px;
+    color: #666;
+}
+
+/* gitDeco part */
+#gitDeco{position: relative;}
+#gitDeco:hover{}
+#gitDeco .wrap{
+    position: fixed;
+    right: -10px; top: 20%;
+}
+#gitDeco .wrap > h3.clickGit{
+    font-size: 16px;
+    font-weight: lighter;
+    margin-left: -100px;
+    text-transform: capitalize;
+    padding-bottom: 0;
+}
+#gitDeco .wrap a{}
+#gitDeco .wrap a img{
+    position: absolute;
+    bottom: -100px; right: -15px;
+    display: block;
+    width: 80px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#gitDeco .wrap:hover a img{
+    right: 10px;
+    transform: rotate(-20deg);
+}
+
+
+
+/* 공통 footer part */
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+}
+footer p{
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+}
